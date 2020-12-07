@@ -98,3 +98,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#alias bye="poweroff"
+alias ll='ls -l'
+alias la='ls -A'
+alias l='ls -CF'
+alias bye='poweroff'
+alias update='sudo apt update && sudo apt upgrade -y'
+alias clean='sudo apt clean && sudo apt autoremove'
+alias cls='clear'
+alias start=' /home/kali/scripts/quickStartTmux.sh'
