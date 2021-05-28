@@ -9,7 +9,7 @@ export ZSH="/home/kali/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="af-magic"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -107,3 +107,4 @@ alias update='sudo apt update && sudo apt upgrade -y'
 alias clean='sudo apt clean && sudo apt autoremove'
 alias cls='clear'
 alias start=' /home/kali/scripts/quickStartTmux.sh'
+alias ra='ranger'
