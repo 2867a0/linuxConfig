@@ -2,6 +2,39 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+mondy="\033[01;36m"
+tuesday="\033[01;32m"
+thresday="\033[01;33m"
+whesday="\033[01;34m"
+friday="\033[01;35m"
+end="\033[00m"
+
+time=`date | awk '{print $4}'`
+today=""
+
+if [ "$time" = "星期一" ];then
+	today=$mondy
+elif [ "$time" = "星期二" ];then
+	today=$tuesday
+elif [ "$time" = "星期三" ];then
+	today=$thresday
+elif [ "$time" = "星期四" ];then
+	today=$whesday
+elif [ "$time" = "星期五" ];then
+	today=$friday
+elif [ "$time" = "星期六" ];then
+	today=$friday
+else
+	today=$friday
+fi
+
+echo -e $today"              _                          "$end "   ____  ___   __ _____      ___  "
+echo -e $today"__      _____| | ___ ___  _ __ ___   ___ "$end "  |___ \\( _ ) / /|___  |_ _ / _ \\ "
+echo -e $today"\\ \\ /\\ / / _ \\ |/ __/ _ \\| '_ \` _ \\ / _ \\\\"$end "    __) / _ \\| '_ \\ / / _\` | | | |"
+echo -e $today" \\ V  V /  __/ | (_| (_) | | | | | |  __/"$end "   / __/ (_) | (_) / / (_| | |_| |"
+echo -e $today"  \\_/\\_/ \\___|_|\\___\\___/|_| |_| |_|\\___|"$end "  |_____\\___/ \\___/_/ \\__,_|\\___/ "
+
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
