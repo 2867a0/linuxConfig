@@ -125,7 +125,6 @@ alias bye='poweroff'
 alias update='sudo apt update && sudo apt upgrade -y'
 alias clean='sudo apt clean && sudo apt autoremove'
 alias cls='clear'
-alias start='. /home/kali/scripts/quickStartTmux.sh'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
