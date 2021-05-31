@@ -126,6 +126,9 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 #alias push='git commit -m \"$1\" -a && git push'
+alias update='sudo apt update -y && sudo apt upgrade -y'
+alias cls='clear'
+alias bye='poweroff'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
