@@ -1,0 +1,13 @@
+#github:linuxconfig
+Host url1.com
+	User git
+	HostName github.com
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/私钥
+
+#github:python-data
+Host url2.com
+	User git
+	HostName github.com
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/私钥
