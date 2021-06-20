@@ -3,13 +3,14 @@
 export PATH=$HOME/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/kali/.oh-my-zsh"
+export ZSH="/home/hhtt/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="af-magic"
+#ZSH_THEME="af-magic"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -69,7 +70,7 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z zsh-autosuggestions zsh-syntax-highlighting sudo extract)
+plugins=(git z zsh-autosuggestions sudo extract)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -98,7 +99,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#alias bye="poweroff"
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
@@ -106,5 +106,6 @@ alias bye='poweroff'
 alias update='sudo apt update && sudo apt upgrade -y'
 alias clean='sudo apt clean && sudo apt autoremove'
 alias cls='clear'
-alias start=' /home/kali/scripts/quickStartTmux.sh'
 alias ra='ranger'
+alias touch_stop='sudo rmmod psmouse'
+alias touch_start='sudo modprobe psmouse'
