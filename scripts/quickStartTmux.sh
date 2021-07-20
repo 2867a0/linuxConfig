@@ -10,10 +10,10 @@ then
 	tmux new-session -s working1 -n a -d
 
 	#上下分裂窗口
-	tmux split-window -v -t working1
+	tmux split-window -h -t working1
 
 	#在下层窗口中水平分裂
-	tmux split-window -h -t working1:0.1
+	tmux split-window -v -t working1:0.1
 
 	#最上层面板进入信息收集目录
 	#tmux send-keys -t working1:0.0 'cd ~/Desktop/InformationSchema/' C-m
