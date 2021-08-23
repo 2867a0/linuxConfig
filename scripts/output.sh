@@ -2,7 +2,8 @@
 
 # 判断参数个数
 if [ $# -ne 1 ]; then
-	echo "[-]Error Usage: ./output.sh test.m3u";
+	echo "[*]Usage: ./output.sh test.m3u";
+	echo "[*]description: 从m3u文件中读取音乐文件路径并导出到指定文件夹.\n";
 	exit
 fi
 
